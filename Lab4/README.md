@@ -41,9 +41,10 @@
 
 ## Сборка
 
-```bash```
+```bash
 cmake -S . -B build
 cmake --build build --config Release
+```
 
 Или через Visual Studio: открыть папку `Lab4` как CMake-проект, выбрать конфигурацию **x64-Release** и нажать **Собрать всё** (Build All).
 
@@ -53,9 +54,9 @@ cmake --build build --config Release
 
 ### 1. Установить Python-зависимости (один раз)
 
-```bash```
+```bash
 py -m pip install -r requirements.txt
-
+```
 ### 2. Сгенерировать матрицы и запустить серию экспериментов
 
 Скрипт `runner.py` автоматически:
@@ -64,9 +65,13 @@ py -m pip install -r requirements.txt
 - собирает данные в `benchmark.csv`,
 - строит график `speedup.png`.
 
-```bush```
+```bush
 py runner.py
+```
 
 ### 3. Проверить корректность
-```bush```
+
+```bush
 py verify.py <размер_матрицы>
+```
+
