@@ -43,13 +43,13 @@
 
 Локально (Windows, MS-MPI):
 
-    ```
+    ```bash
     cmake -S . -B build
     cmake --build build --config Release
     ```
 
 На суперкомпьютере (Intel MPI):
-    ```
+    ```bash
     module load intel/icc18
     module load intel/mpi4
     mpiicpc -std=c++11 -O2 -o Lab3 main.cpp matrix_io.cpp matrix_multiply.cpp mpi_utils.cpp
@@ -61,7 +61,7 @@
 
 ### 1. Установить Python-зависимости (локально, один раз)
 
-    ```
+    ```bash
     py -m pip install pandas matplotlib numpy
     ```
 
@@ -69,20 +69,20 @@
 
 Скрипт generate_matrices.sh генерирует папки matrices_200, matrices_400, …, matrices_2000 с файлами matrix_a.txt и matrix_b.txt.
 
-    ```
+    ```bash
     chmod +x generate_matrices.sh
     ./generate_matrices.sh
     ```
 
 Скрипт run_all.slurm автоматически перебирает все комбинации (6 размеров × 4 варианта ядер = 24 запуска) и дописывает результаты в benchmark.csv.
     
-    ```
+    ```bash
     sbatch run_all.slurm
     ```
 
 Мониторинг задания:
 
-    ```
+    ```bash
     squeue -u $USER
     ```
 
@@ -90,7 +90,7 @@
 
 Скачайте benchmark.csv через WinSCP и запустите:
 
-    ```
+    ```bash
     py plot_perf.py
     ```
 
@@ -102,7 +102,7 @@ C++ программа запускается без аргументов и ч�
 
 ## Что выводит C++ программа
 
-    ```
+    ```bash
     Laboratory Work 3: Sequential + MPI
     Matrix size: 2000 x 2000
     MPI processes: 8
