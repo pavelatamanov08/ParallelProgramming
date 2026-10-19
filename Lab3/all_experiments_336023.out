@@ -1,0 +1,247 @@
+=== Размер матрицы: 200 x 200 ===
+  -> Запуск на 1 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 200 x 200
+MPI processes: 1
+
+Sequential:   4.348 ms
+MPI (1 procs):  4.571 ms  (speedup 0.951)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 2 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 200 x 200
+MPI processes: 2
+
+Sequential:   4.231 ms
+MPI (2 procs):  2.788 ms  (speedup 1.517)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 4 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 200 x 200
+MPI processes: 4
+
+Sequential:   4.309 ms
+MPI (4 procs):  2.120 ms  (speedup 2.033)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 8 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 200 x 200
+MPI processes: 8
+
+Sequential:   4.309 ms
+MPI (8 procs):  2.396 ms  (speedup 1.799)
+
+MPI vs Sequential: OK
+  ---------------------------------
+=== Размер матрицы: 400 x 400 ===
+  -> Запуск на 1 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 400 x 400
+MPI processes: 1
+
+Sequential:   33.086 ms
+MPI (1 procs):  34.517 ms  (speedup 0.959)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 2 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 400 x 400
+MPI processes: 2
+
+Sequential:   33.077 ms
+MPI (2 procs):  18.664 ms  (speedup 1.772)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 4 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 400 x 400
+MPI processes: 4
+
+Sequential:   33.536 ms
+MPI (4 procs):  11.076 ms  (speedup 3.028)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 8 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 400 x 400
+MPI processes: 8
+
+Sequential:   33.636 ms
+MPI (8 procs):  8.138 ms  (speedup 4.133)
+
+MPI vs Sequential: OK
+  ---------------------------------
+=== Размер матрицы: 800 x 800 ===
+  -> Запуск на 1 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 800 x 800
+MPI processes: 1
+
+Sequential:   265.304 ms
+MPI (1 procs):  271.450 ms  (speedup 0.977)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 2 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 800 x 800
+MPI processes: 2
+
+Sequential:   265.829 ms
+MPI (2 procs):  138.974 ms  (speedup 1.913)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 4 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 800 x 800
+MPI processes: 4
+
+Sequential:   260.746 ms
+MPI (4 procs):  79.316 ms  (speedup 3.287)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 8 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 800 x 800
+MPI processes: 8
+
+Sequential:   270.362 ms
+MPI (8 procs):  118.999 ms  (speedup 2.272)
+
+MPI vs Sequential: OK
+  ---------------------------------
+=== Размер матрицы: 1200 x 1200 ===
+  -> Запуск на 1 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 1200 x 1200
+MPI processes: 1
+
+Sequential:   1010.348 ms
+MPI (1 procs):  1018.340 ms  (speedup 0.992)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 2 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 1200 x 1200
+MPI processes: 2
+
+Sequential:   1007.220 ms
+MPI (2 procs):  518.545 ms  (speedup 1.942)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 4 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 1200 x 1200
+MPI processes: 4
+
+Sequential:   997.628 ms
+MPI (4 procs):  562.549 ms  (speedup 1.773)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 8 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 1200 x 1200
+MPI processes: 8
+
+Sequential:   1036.539 ms
+MPI (8 procs):  414.542 ms  (speedup 2.500)
+
+MPI vs Sequential: OK
+  ---------------------------------
+=== Размер матрицы: 1600 x 1600 ===
+  -> Запуск на 1 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 1600 x 1600
+MPI processes: 1
+
+Sequential:   3146.685 ms
+MPI (1 procs):  3098.319 ms  (speedup 1.016)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 2 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 1600 x 1600
+MPI processes: 2
+
+Sequential:   3142.635 ms
+MPI (2 procs):  1578.499 ms  (speedup 1.991)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 4 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 1600 x 1600
+MPI processes: 4
+
+Sequential:   3143.949 ms
+MPI (4 procs):  1224.807 ms  (speedup 2.567)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 8 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 1600 x 1600
+MPI processes: 8
+
+Sequential:   3673.475 ms
+MPI (8 procs):  976.423 ms  (speedup 3.762)
+
+MPI vs Sequential: OK
+  ---------------------------------
+=== Размер матрицы: 2000 x 2000 ===
+  -> Запуск на 1 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 2000 x 2000
+MPI processes: 1
+
+Sequential:   6335.342 ms
+MPI (1 procs):  6276.554 ms  (speedup 1.009)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 2 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 2000 x 2000
+MPI processes: 2
+
+Sequential:   6332.853 ms
+MPI (2 procs):  3199.647 ms  (speedup 1.979)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 4 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 2000 x 2000
+MPI processes: 4
+
+Sequential:   6359.577 ms
+MPI (4 procs):  2392.550 ms  (speedup 2.658)
+
+MPI vs Sequential: OK
+  ---------------------------------
+  -> Запуск на 8 процессах...
+Laboratory Work 3: Sequential + MPI
+Matrix size: 2000 x 2000
+MPI processes: 8
+
+Sequential:   7549.730 ms
+MPI (8 procs):  1871.301 ms  (speedup 4.034)
+
+MPI vs Sequential: OK
+  ---------------------------------
+Все эксперименты завершены!
