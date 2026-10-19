@@ -43,17 +43,18 @@
 
 Локально (Windows, MS-MPI):
 
-    ```bash
-    cmake -S . -B build
-    cmake --build build --config Release
-    ```
+```bash
+cmake -S . -B build
+cmake --build build --config Release
+```
 
 На суперкомпьютере (Intel MPI):
-    ```bash
-    module load intel/icc18
-    module load intel/mpi4
-    mpiicpc -std=c++11 -O2 -o Lab3 main.cpp matrix_io.cpp matrix_multiply.cpp mpi_utils.cpp
-    ```
+
+```bash
+module load intel/icc18
+module load intel/mpi4
+mpiicpc -std=c++11 -O2 -o Lab3 main.cpp matrix_io.cpp matrix_multiply.cpp mpi_utils.cpp
+```
 
 > ⚠️ **Важно:** для получения корректных результатов всегда используйте оптимизацию (-O2 или конфигурацию **Release**). В режиме Debug накладные расходы MPI могут сделать параллельную версию медленнее последовательной.
 
@@ -61,38 +62,38 @@
 
 ### 1. Установить Python-зависимости (локально, один раз)
 
-    ```bash
-    py -m pip install pandas matplotlib numpy
-    ```
+```bash
+py -m pip install pandas matplotlib numpy
+```
 
 ### 2. Сгенерировать матрицы и запустить серию экспериментов на кластере
 
 Скрипт generate_matrices.sh генерирует папки matrices_200, matrices_400, …, matrices_2000 с файлами matrix_a.txt и matrix_b.txt.
 
-    ```bash
-    chmod +x generate_matrices.sh
-    ./generate_matrices.sh
-    ```
+```bash
+chmod +x generate_matrices.sh
+./generate_matrices.sh
+```
 
 Скрипт run_all.slurm автоматически перебирает все комбинации (6 размеров × 4 варианта ядер = 24 запуска) и дописывает результаты в benchmark.csv.
     
-    ```bash
-    sbatch run_all.slurm
-    ```
+```bash
+sbatch run_all.slurm
+```
 
 Мониторинг задания:
 
-    ```bash
-    squeue -u $USER
-    ```
+```bash
+squeue -u $USER
+```
 
 ### 3. Скачать результаты и построить графики (локально)
 
 Скачайте benchmark.csv через WinSCP и запустите:
 
-    ```bash
-    py plot_perf.py
-    ```
+```bash
+py plot_perf.py
+```
 
 Результат — файл performance.png с тремя графиками: время от размера, ускорение от размера и время MPI от количества процессов.
 
@@ -102,16 +103,16 @@ C++ программа запускается без аргументов и ч�
 
 ## Что выводит C++ программа
 
-    ```bash
-    Laboratory Work 3: Sequential + MPI
-    Matrix size: 2000 x 2000
-    MPI processes: 8
+```bash
+Laboratory Work 3: Sequential + MPI
+Matrix size: 2000 x 2000
+MPI processes: 8
 
-    Sequential:   <мс>
-    MPI (8 procs): <мс>  (speedup <во сколько раз>)
+Sequential:   <мс>
+MPI (8 procs): <мс>  (speedup <во сколько раз>)
 
-    MPI vs Sequential: OK
-    ```
+MPI vs Sequential: OK
+```
 
 - Sequential — время последовательной версии,
 - MPI — время параллельной версии,
